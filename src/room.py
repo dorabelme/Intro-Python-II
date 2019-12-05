@@ -5,7 +5,7 @@ from item import Item
 
 
 class Room:
-    def __init__(self, name, description, n_to, s_to, w_to, e_to):
+    def __init__(self, name, description, n_to=None, s_to=None, w_to=None, e_to=None):
         self.name = name
         self.description = description
         self.n_to = n_to
@@ -15,7 +15,17 @@ class Room:
         self.items = []
 
     def __str__(self):
-        return f"Name: {self.name} \Description: {self.description} \nN_to: {self.n_to}\nS_to: {self.s_to}\nE_to: {self.e_to}\nW_to: {self.w_to}\nItems in the room : " + {str(self.items)}"
+        # return f"Name: {self.name}"
+
+        _str = f"Name: {self.name} \nDescription: {self.description} \n"
+        _str += f"Items in the room : {self.items}"
+
+        return _str
+
+        # if self.n_to:
+        #     _str +=
+
+        # return f"Name: {self.name} \nDescription: {self.description} \nN_to: {self.n_to.name}\nS_to: {self.s_to.name}\nE_to: {self.e_to.name}\nW_to: {self.w_to.name}\nItems in the room : {self.items}"
 
     def get_items(self):
         return self.items
