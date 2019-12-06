@@ -81,7 +81,7 @@ while True:
         print(f"You've won the game {new_player.name}!")
         break
 
-        # Game description
+    # Game description
     print("\n")
     print("Hi " + new_player.name +
           "! Your current location: " + new_player.current_room.name + "\n")

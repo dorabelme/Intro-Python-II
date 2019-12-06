@@ -22,11 +22,6 @@ class Room:
 
         return _str
 
-        # if self.n_to:
-        #     _str +=
-
-        # return f"Name: {self.name} \nDescription: {self.description} \nN_to: {self.n_to.name}\nS_to: {self.s_to.name}\nE_to: {self.e_to.name}\nW_to: {self.w_to.name}\nItems in the room : {self.items}"
-
     def get_items(self):
         return self.items
 
